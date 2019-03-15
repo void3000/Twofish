@@ -1,4 +1,4 @@
 # Twofish
 Cryptography: Twofish Implementation In C
 
-()["doc/3.JPG"]
+(Results)[doc/3.JPG]

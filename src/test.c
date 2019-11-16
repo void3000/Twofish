@@ -43,7 +43,6 @@ const twofish_test_t twofish_test[] =
     {128,"cf5553bc00ff56c3ee51a04511bc54d9","90afe91bb288544f2c32dc239b2635e6","4ac085c729dbc814fe98d5a1d8bdce7e"}
 };
 
-// Converts a string of hex codes to a string of code words
 void hex_to_codeword(uint8_t *dest, const char *src, int len)
 {
     for(int j=0; j<len;++j)
@@ -64,7 +63,6 @@ void hex_to_codeword(uint8_t *dest, const char *src, int len)
     }
 }
 
-// Assert function
 void assert_twofish(int m,const char *msg,const twofish_test_t *tf,uint8_t *given,uint8_t *derived, int expected)
 {
     if(memcmp(given,derived,16) == expected)
